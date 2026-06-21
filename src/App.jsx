@@ -1,14 +1,9 @@
 import './App.css'
+import AppRoutes from './routes/AppRoutes'
 
 function App() {
 
-  return (
-    <>
-      <div>
-         <h2>This is my E-Commerce Platform</h2>
-      </div>
-    </>
-  )
+  return <AppRoutes />
 }
 
 export default App

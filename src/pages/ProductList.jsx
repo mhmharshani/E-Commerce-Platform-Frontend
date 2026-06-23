@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getAllProducts } from "../api/productApi";
 import ProductCard from "../components/ProductCard";
+import Navbar from "../components/Navbar";
 
 export default function ProductList(){
     const [products, setProducts] = useState([]);
@@ -27,6 +28,7 @@ export default function ProductList(){
 
     return (
         <div>
+            <Navbar />
             <h1>Products</h1>
 
             {products.map((p) => (
@@ -36,3 +38,4 @@ export default function ProductList(){
     );
 
 }
+

@@ -1,13 +1,16 @@
-import Navbar from "../components/Navbar";
+import AppNavbar from "../components/Navbar";
 
 function HomePage(){
 
     return (
         <>
             <div>
-                <Navbar />
+                <AppNavbar />
                 <h1>This is Home Page</h1>
             </div>
+            <h1 className="text-3xl font-bold">
+                Hello Tailwind
+            </h1>
         </>
     );
 }

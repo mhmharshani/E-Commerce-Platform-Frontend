@@ -1,16 +1,24 @@
+
 import AppNavbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
+import FooterSection from "../components/FooterSection";
 
 function HomePage(){
 
     return (
         <>
-            <div>
+            <div className="min-h-screen bg-gray-50">
                 <AppNavbar />
-                <h1>This is Home Page</h1>
+
+                <HeroSection />
+
+                {/* <CategorySection />
+
+                <ProductGrid /> */}
+
+                <FooterSection />
             </div>
-            <h1 className="text-3xl font-bold">
-                Hello Tailwind
-            </h1>
+        
         </>
     );
 }

@@ -66,6 +66,6 @@ export default function ProductCard({product}){
                 Add to cart
                 </a>
             </div>
-            </Card>
+        </Card>
     );
 }

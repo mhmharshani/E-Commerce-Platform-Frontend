@@ -60,15 +60,3 @@ export default function AppNavbar() {
 
 
 
-// function AppNavbar() {
-
-//     const navigate = useNavigate();
-
-//     const logout = () => {
-//         localStorage.removeItem("token");
-//         navigate("/login");
-//     };
-// <NavbarBrand as={Link} to="/">
-    
-        
-// }

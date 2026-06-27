@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getAllProducts } from "../api/productApi";
-import ProductCard from "../components/ProductCard";
 import AppNavbar from "../components/Navbar";
+import ProductGrid from "../components/ProductGrid";
 
 export default function ProductList(){
     const [products, setProducts] = useState([]);
@@ -31,9 +31,8 @@ export default function ProductList(){
             <AppNavbar />
             <h1>Products</h1>
 
-            {products.map((p) => (
-                <ProductCard key={p.id} product={p} />
-            ))}
+            <ProductGrid products={products} />
+            
         </div>
     );
 

@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ProductList from "../pages/ProductList";
 import ProtectedRoute from "./ProtectedRoute";
 import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
+import ProductPage from "../pages/ProductPage";
 
 
 export default function AppRoutes(){
@@ -16,10 +16,13 @@ export default function AppRoutes(){
                     <LoginPage /> 
                 }/>
                 <Route path="/product" element={
-                    <ProtectedRoute>
-                        <ProductList />
-                    </ProtectedRoute>   
+                    <ProductPage />  
                 }/>
+                {/* <Route path="/cart" element={
+                    <ProtectedRoute>
+                        <Cart />
+                    </ProtectedRoute>
+                }/> */}
             </Routes>
         </BrowserRouter>
     );

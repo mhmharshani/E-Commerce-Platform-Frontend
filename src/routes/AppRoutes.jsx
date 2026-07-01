@@ -3,6 +3,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import LoginPage from "../pages/LoginPage";
 import HomePage from "../pages/HomePage";
 import ProductPage from "../pages/ProductPage";
+import CartPage from "../pages/CartPage";
 
 
 export default function AppRoutes(){
@@ -18,11 +19,11 @@ export default function AppRoutes(){
                 <Route path="/product" element={
                     <ProductPage />  
                 }/>
-                {/* <Route path="/cart" element={
+                <Route path="/cart" element={
                     <ProtectedRoute>
-                        <Cart />
+                        <CartPage />
                     </ProtectedRoute>
-                }/> */}
+                }/>
             </Routes>
         </BrowserRouter>
     );

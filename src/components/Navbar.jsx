@@ -51,7 +51,7 @@ export default function AppNavbar() {
                 <NavbarLink as={Link} to="/" active>Home</NavbarLink>
                 <NavbarLink href="#">Dashboard</NavbarLink>
                 <NavbarLink as={Link} to="/product">Product</NavbarLink>
-                <NavbarLink href="#">Cart</NavbarLink>
+                <NavbarLink as={Link} to="/cart">Cart</NavbarLink>
                 <NavbarLink as={Link} to="/login">Login</NavbarLink>
             </NavbarCollapse>
         </Navbar>

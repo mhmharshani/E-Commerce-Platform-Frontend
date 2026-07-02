@@ -9,7 +9,7 @@ export default function CategoryGrid({categories =[]}){
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 
                 {categories.map((category) => (
-                    <CategoryCard category={category} />
+                    <CategoryCard key={category.id} category={category} />
                 ))}
             </div>
         </div>

@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
+import AppNavbar from "../components/Navbar";
 
 function LoginPage(){
 
@@ -24,11 +25,18 @@ function LoginPage(){
             "token",
             response.data.token
         );
-        navigate("/product")
+
+        if (response.data.role === "ADMIN") {
+            // navigate("/admin");
+        } else {
+            navigate("/");
+        }
+       
     };
 
     return (
         <>
+            <AppNavbar />
             <form className="flex max-w-md flex-col gap-4 bg-cyan-600 p-6 rounded mx-auto">
                 <div className="text-white p-6">
                     Login

@@ -8,10 +8,14 @@ axiosClient.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("token");
 
+    console.log("TOKEN:", token);
+    console.log("REQUEST URL:", config.url);
+
     const publicEndpoints = ["/auth", "/product", "/category"];
 
     const isPublic = publicEndpoints.some(url =>
         config.url.includes(url)
+        
     );
 
     if (token && !isPublic) {

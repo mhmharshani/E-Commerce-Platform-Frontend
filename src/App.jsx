@@ -1,7 +1,7 @@
 import './App.css'
 import AppRoutes from './routes/AppRoutes'
 
-function App() {
+export default function App() {
 
   return (
     <div className="min-h-screen bg-blue-100"> 
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App
+

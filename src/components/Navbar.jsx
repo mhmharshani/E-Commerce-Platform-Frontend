@@ -49,7 +49,7 @@ export default function AppNavbar() {
             </div>
             <NavbarCollapse>
                 <NavbarLink as={Link} to="/" active>Home</NavbarLink>
-                <NavbarLink href="#">Dashboard</NavbarLink>
+                <NavbarLink as={Link} to="/dashboard">Dashboard</NavbarLink>
                 <NavbarLink as={Link} to="/product">Product</NavbarLink>
                 <NavbarLink as={Link} to="/cart">Cart</NavbarLink>
                 <NavbarLink as={Link} to="/login">Login</NavbarLink>

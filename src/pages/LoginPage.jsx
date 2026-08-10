@@ -26,8 +26,13 @@ function LoginPage(){
             response.data.token
         );
 
+        localStorage.setItem(
+            "role",
+            response.data.role
+        );
+
         if (response.data.role === "ADMIN") {
-            // navigate("/admin");
+            navigate("/dashboard");
         } else {
             navigate("/");
         }
